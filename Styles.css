@@ -1,0 +1,84 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #444;
+}
+
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #9face6;
+    padding-bottom: 10px;
+}
+
+
+
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+
+
+button {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    padding: 14px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+
+
+input:invalid {
+    border-color: #ff4b5c;
+    background: rgba(255, 75, 92, 0.1);
+}
+
+input:valid {
+    border-color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+}
